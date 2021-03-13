@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+    font-family: serif;
+    font-size: 20px;
+}
+
+.content {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.top {
+    background: #E8BBC5;
+}
+
+.nav-top {
+    display: flex;
+    margin: 20px 0;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.nav-top-menu {
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;
+}
+
+
+.nav-top-menu-items ul {
+    list-style: none;
+    margin: 60px 0 0 40px;
+    padding-top: 0;
+    align-content: flex-end;
+}
+
+.content-logo {
+    width: 170px;
+    height: 75px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.nav-top-menu-items li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-top-menu-items a:hover {
+    color: #F652A0;
+    text-decoration: underline;
+}
+
+.nav-top-menu-items a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #A49393;
+}
+
+.video-about {
+    text-align: right;
+    margin-bottom: 150px;
+    height: 300px;
+}
+
+
+.video-about video {
+    height: 280px;
+}
+
+@keyframes showTopText {
+    0% {
+        transform: translate3d(0, 100%, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(0, 50%, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes showBottomText {
+    0% {
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animated-title {
+    color: #222;
+    text-align: center;
+    height: 38vmin;
+    position: absolute;
+    top: 200px;
+    width: 47vmin;
+}
+
+.animated-title > div {
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    /*    text-align: left;*/
+    width: 100%;
+}
+
+.animated-title > div div {
+    font-size: 8vmin;
+    padding: 2vmin 0;
+    text-align: left;
+    position: absolute;
+}
+
+.animated-title > div div span {
+    display: block;
+}
+
+.animated-title > div.text-top {
+    border-bottom: 1vmin solid #000;
+    top: 0;
+}
+
+.animated-title > div.text-top div {
+    animation: showTopText 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+}
+
+.animated-title > div.text-top div span:first-child {
+    color: #D75C89;
+}
+
+.animated-title > div.text-bottom {
+    bottom: 0;
+}
+
+.animated-title > div.text-bottom div {
+    animation: showBottomText 0.5s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -100%);
+}
+
+section {
+    scroll-margin-top: 140px;
+}
+
+.section-title-wrapper {
+    margin-top: -20px;
+}
+
+.section-title-wrapper h2 {
+    margin: auto;
+    background: white;
+}
+
+.Learn-Amigurumi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
+    margin-bottom: 80px;
+}
+
+.Learn-Amigurumi img {
+    width: 600px;
+    margin-top: 50px;
+    border-radius: 3px;
+
+}
+
+.amigurumi-about {
+    text-align: right;
+}
+
+.amigurumi-about-title {
+    text-align: center;
+    padding: 50px;
+    padding-top: 25px;
+}
+
+.my-work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
+    margin-bottom: 80px;
+}
+
+.my-work img {
+    width: 400px;
+    margin-top: 50px;
+    border-radius: 3px;
+}
+
+.amigurumi-work-title {
+    text-align: center;
+    padding: 20px;
+    padding-top: 25px;
+}
+
+.section-contact-title h2 {
+    background: white;
+    width: 200px;
+}
+
+.section-work-title h2 {
+    background: white;
+    width: 180px;
+}
+
+.section-about-title h2 {
+    background: white;
+    width: 180px;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.section-contact-title h2 {
+    background: white;
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+h5 {
+    text-align: center;
+    margin-top: -50px;
+}
+
+h5 a {
+    text-decoration: none;
+    color: black;
+}
+
+h5 a:hover {
+    text-decoration: underline;
+    color: #eda4be;
+}
+
+p {
+    text-align: justify;
+    padding: 10px;
+}
+
+.social-medias {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 4px;
+
+}
+
+.social-medias a {
+    align-content: center;
+    text-decoration: none;
+    margin: 10px;
+}
+
+ion-icon[name="logo-facebook"],
+ion-icon[name="logo-instagram"],
+ion-icon[name="logo-pinterest"],
+ion-icon[name="logo-youtube"] {
+    vertical-align: middle;
+    color: black;
+}
+
+ion-icon[name="logo-facebook"]:hover,
+ion-icon[name="logo-instagram"]:hover,
+ion-icon[name="logo-pinterest"]:hover,
+ion-icon[name="logo-youtube"]:hover {
+    color: #EF7C8E;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
+}
+.section-contact-message {
+    text-align: center;
+}
+.formular-content {
+    max-width: 500px;
+    padding: 30px 30px 0 30px;
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+    padding: 10px;
+    background-color: #facddd;
+    border-color: #eda4be;
+    border: none;
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #DF8BA9;
+    /*border-top-left-radius: 5px;*/
+    width: 70%;
+    box-sizing: border-box;
+
+}
+
+textarea {
+    vertical-align: top;
+    padding: 10px;
+    background-color: #facddd;
+    border-color: #eda4be;
+    border: none;
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #DF8BA9;
+}
+
+input:focus,
+textarea:focus {
+    border-bottom: 5px solid #EF7C8E;
+    outline: none;
+}
+
+::placeholder {
+    color: #FAE8E0;
+}
+
+input[type="imagem"] {
+    border: none;
+}
+
+input[type="submit"] {
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+    background: pink;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+footer p {
+    background-color: #FAE8E0;
+    text-align: center;
+    color: black;
+}
